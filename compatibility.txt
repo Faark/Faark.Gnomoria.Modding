@@ -1,0 +1,6 @@
+Here is an overview of what GnoMod-Version should work with fine on what Version of Gnomoria. Actually, ModUI should work fine with most any version of the game, while you only have to carefully match the versions for the actual mods.
+
+Gnomoria 0.8.42 and earlier => Gnomod 13.02 and ealier
+Gnomoria 0.8.43 => Gnomod 13.03
+Gnomoria 0.8.44 => Gnomod 13.04
+Gnomoria 0.8.46+ => Gnomod 13.05+

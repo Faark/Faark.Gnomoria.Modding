@@ -1,0 +1,29 @@
+﻿<Window x:Class="GnomoriaModUI.ModUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Style="{StaticResource GnomeWindow}"
+        Title="Play Gnomoria with Mods" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid Style="{StaticResource GnomeBackPanel1}" Name="gWindow">
+        <Button Content="Get Mods" Height="23" HorizontalAlignment="Left" Margin="10,10,0,0" Name="btn_setPanel_getMods" Style="{StaticResource GnomeButton1}" VerticalAlignment="Top" Width="82" Opacity="0" />
+        <Button Content="Installed Mods" Height="23" HorizontalAlignment="Left" Margin="98,10,0,0" Name="btn_setPanel_showInstalled" Style="{StaticResource GnomeButton1}" VerticalAlignment="Top" Width="126" Click="btn_setPanel_showInstalled_Click" IsEnabled="True" />
+        <Button Content="More" HorizontalAlignment="Left" Margin="230,10,0,0" Name="btn_panelSelection_showMoreBox" Style="{StaticResource GnomeButton1}" Width="65" MouseEnter="btn_panelSelection_showMoreBox_MouseEnter" Height="23" VerticalAlignment="Top" />
+        <Grid HorizontalAlignment="Stretch" Margin="0,39,0,41" Name="grid_selectedPanelHost" VerticalAlignment="Stretch" />
+        <Grid HorizontalAlignment="Left" Margin="208,8,0,0" Name="grid_panelSelectionPopup" VerticalAlignment="Top" Width="116" MouseLeave="grid_panelSelectionPopup_MouseLeave" Visibility="Visible" Background="#00000000">
+            <ContentControl Margin="0,27,0,0" Template="{StaticResource RaisedPanel}">
+                <Grid HorizontalAlignment="Left" Name="grid_panelSelectionPopupBackground" VerticalAlignment="Top" Background="#506270">
+                    <Button Content="Advanced View" Height="23" HorizontalAlignment="Left" Margin="4,2,4,0" Name="btn_setPanel_advancedInstalled" Style="{StaticResource GnomeButton1}" VerticalAlignment="Top" Width="104" />
+                    <Button Content="View Logs" Height="23" HorizontalAlignment="Left" Margin="4,30,4,0" Name="btn_setPanel_logs" Style="{StaticResource GnomeButton1}" VerticalAlignment="Top" Width="104" Click="btn_setPanel_logs_Click" />
+                    <Button Content="Settings" Height="23" HorizontalAlignment="Left" Margin="4,59,4,3" Name="btn_setPanel_settings" Style="{StaticResource GnomeButton1}" VerticalAlignment="Top" Width="104" Click="btn_setPanel_settings_Click" />
+                </Grid>
+            </ContentControl>
+        </Grid>
+        <Button Height="23" HorizontalAlignment="Center" Margin="5,0,5,12" VerticalAlignment="Bottom" Width="188" Click="btn_startgame_Click" 
+                Style="{StaticResource GnomeButton1}"
+                Name="btn_startgame">
+            <StackPanel Orientation="Horizontal" >
+                <Image Height="16"  Name="image1" Margin="0,0,5,0" Stretch="Fill" Width="16" Source="../Images/GE.ico" />
+                <TextBlock VerticalAlignment="Bottom">Start Game with Mods</TextBlock>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+﻿- Change dificutly settings for everyone. Should be fairly easy, unless we want to do more (add peacful, etc?)
+
+- CrossMerchantTrade. Especially for summer merchants....
+
+- http://forums.gnomoria.com/index.php?topic=3995.msg31917#new <= More "HOW MANY DO I HAVE"-Icons should be doable.
+
+- A mechanical transistor
+
+- Conveyors
+
+- Search, filter and sort merchants and may other lists as well
+
+- Garbage dump. Some kind of custom storage where items disappear over time.
+
+- Larger storage chests (once custom items&co are in place....)
+
+- Workshops that use mechanical energy as input. Ideas: Sawmill (obvious), Stonecutter, Smiths, Loom
+
+- Improve the military loadouts, by allowing multiple sets & on mutiple levels (e.g. asign a set with weapon only to gnome directly). Lots of work
+
+- Sync tasks across workshops with some kind of templates, similar to the military idea.

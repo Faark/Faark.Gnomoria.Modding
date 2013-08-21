@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D106CA14-2A98-4F57-BD94-DDFE7ABAB068}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Faark.Gnomoria.Mods</RootNamespace>
+    <AssemblyName>Faark.Gnomoria.Mods</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Release\Mods\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gnomoria">
+      <HintPath>..\Release\Gnomoria.exe</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="gnomorialib">
+      <HintPath>..\Release\gnomorialib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Done\DebbugingTest.cs" />
+    <Compile Include="Wip\Ideas\ColoredLeather.cs" />
+    <Compile Include="Wip\BookShelve.cs" />
+    <Compile Include="Disabled\BugStuff\CustomIsItemInStocks.cs" />
+    <Compile Include="Disabled\BugStuff\FixAnIssueHelper.cs" />
+    <Compile Include="Disabled\BugStuff\getData.cs" />
+    <Compile Include="Disabled\BugStuff\ItemLifeCounter.cs" />
+    <Compile Include="Done\ExitWithoutSaveInMainMenu.cs" />
+    <Compile Include="Done\ListGnomesForStatusInPopulationOverview.cs" />
+    <Compile Include="Disabled\Trash\RemoveActionPanel.cs" />
+    <Compile Include="Done\ShowLoadSaveTimes.cs" />
+    <Compile Include="Wip\Ideas\LargeStorageBox.cs" />
+    <Compile Include="Done\MaximizeWindowButton.cs" />
+    <Compile Include="Done\NextCharButtonInCharWindow.cs" />
+    <Compile Include="Done\ShowDeveloperConsol.cs" />
+    <Compile Include="Disabled\Trash\debug_skinload.cs" />
+    <Compile Include="Done\AutoBackup.cs" />
+    <Compile Include="Done\CustomFpsCounter.cs" />
+    <Compile Include="Wip\CustomCraftUI.cs" />
+    <Compile Include="Disabled\Trash\CustomStockpileCommand.cs" />
+    <Compile Include="Disabled\Trash\GrowGrassOnRamps.cs" />
+    <Compile Include="Done\PauseOnEnemySight.cs" />
+    <Compile Include="Wip\JobBoardUI.cs" />
+    <Compile Include="Wip\Rightclick_Rebuild.cs" />
+    <Compile Include="Done\ShowSeedOnStartscreen.cs" />
+    <Compile Include="Disabled\Outdated\PopulationUI_SyncScroll.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Done\SmoothedRightClickSubmenus.cs" />
+    <Compile Include="Wip\Ideas\ShittyMod.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GnomoriaModController\GnomoriaModController.csproj">
+      <Project>{665F54A4-0AF4-471C-9FF0-89D801BCDB9C}</Project>
+      <Name>GnomoriaModController</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Disabled\BugStuff\w10_loadtimePlusMercBug.sav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\maxButtons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\sprite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Wip\Ideas\MoreIdeas.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
